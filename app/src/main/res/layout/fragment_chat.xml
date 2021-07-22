@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ChatFragment">
+
+
+<!--    <include-->
+<!--        android:id="@+id/chatToolbarinclude"-->
+<!--        layout="@layout/chat_toolbar"-->
+<!--       />-->
+
+    <TextView
+
+        android:id="@+id/chattt"
+        android:textSize="32sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        android:fontFamily="cursive"
+        android:textStyle="italic"
+        android:textColor="#0C0C0C"/>
+
+
+    <Button
+        android:id="@+id/new_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/recyclerViewChat"
+        android:layout_marginEnd="24dp"
+        android:paddingTop="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/rounded_corn_btn"
+        android:fontFamily="sans-serif"
+        android:text="NEW MSG"
+        android:textColor="@color/purple_700"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chattt"
+        android:layout_marginTop="0dp"
+        tools:listitem="@layout/chat_item_layout" />
+
+
+</RelativeLayout>

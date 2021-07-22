@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".Fragment.GetUserData">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--        <include-->
+<!--            android:id="@+id/loginToolbar"-->
+<!--            layout="@layout/login_toolbar"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+
+        <TextView
+            android:id="@+id/choose_profile_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Profile Picture"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.221"
+            app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.132" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coord"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/choose_profile_pic">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_person_24"
+                android:tint="@color/white"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <ImageView
+                android:id="@+id/imgPickImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="90dp"
+                android:src="@drawable/ic_camera"
+                app:layout_anchor="@+id/circleImageView"
+                app:layout_anchorGravity="end|center"
+                app:tint="@color/black" />
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <EditText
+            android:id="@+id/enter_display_name"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_baseline_account_circle_24"
+            android:ems="10"
+            android:hint="   Enter display name"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coord"
+            app:layout_constraintVertical_bias="0.081" />
+
+        <EditText
+            android:id="@+id/enter_status"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="Status"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enter_display_name"
+            app:layout_constraintVertical_bias="0.082" />
+
+        <Button
+            android:id="@+id/btn_profile_continue"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="46dp"
+            android:background="@drawable/rounded_corn_btn"
+            android:text="Continue"
+            android:textColor="@color/purple_200"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

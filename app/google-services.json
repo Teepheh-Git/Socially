@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "210202029830",
+    "project_id": "socially-bolu",
+    "storage_bucket": "socially-bolu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210202029830:android:eb5e2ea2b066fd1caff887",
+        "android_client_info": {
+          "package_name": "com.example.socialize"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210202029830-3gfnksgkcav0fslfb8ips5qc3c25a7uq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.socialize",
+            "certificate_hash": "cc5bce3f6831979f498cfc21911ea3b03996f019"
+          }
+        },
+        {
+          "client_id": "210202029830-50jm54nf470he230ji1ciea5afluenrv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkyEKB7X4W38FrR7DTU79GYnSwm-0dUrw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210202029830-50jm54nf470he230ji1ciea5afluenrv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

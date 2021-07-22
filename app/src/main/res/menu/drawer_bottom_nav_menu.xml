@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/chatFragment"
+        android:icon="@drawable/ic_baseline_mode_comment_24"
+        android:title="Chat" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/callFragment"
+        android:icon="@drawable/ic_baseline_call_24"
+        android:title="Calls" />
+
+</menu>

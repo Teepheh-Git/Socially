@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="circleImageView" type="id" />
+    <item name="choose_profile_pic" type="id" />
+    <item name="coord" type="id" />
+    <item name="enter_display_name" type="id" />
+    <item name="btn_profile_continue" type="id" />
+    <item name="chatToolbarinclude" type="id" />
+</resources>

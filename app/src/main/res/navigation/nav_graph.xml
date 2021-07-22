@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/chatFragment">
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.socialize.Fragment.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chatFragment_to_contactFragment2"
+            app:destination="@id/contactFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.socialize.Fragment.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/termsFragment"
+        android:name="com.example.socialize.Fragment.TermsFragment"
+        android:label="Terms"
+        tools:layout="@layout/fragment_terms" />
+    <action
+        android:id="@+id/action_global_termsFragment"
+        app:destination="@id/termsFragment"
+        app:enterAnim="@anim/slide_in_top"
+        app:exitAnim="@anim/slide_out_bottom"
+        app:popEnterAnim="@anim/slide_in_bottom"
+        app:popExitAnim="@anim/slide_out_top" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.socialize.Fragment.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/callFragment"
+        android:name="com.example.socialize.Fragment.CallFragment"
+        android:label="Call"
+        tools:layout="@layout/fragment_call" />
+    <fragment
+        android:id="@+id/getUserNumber"
+        android:name="com.example.socialize.Fragment.GetUserNumber"
+        android:label="fragment_get_user_number"
+        tools:layout="@layout/fragment_get_user_number" >
+        <action
+            android:id="@+id/action_getUserNumber_to_getUserData"
+            app:destination="@id/getUserData"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/getUserData"
+        android:name="com.example.socialize.Fragment.GetUserData"
+        android:label="Register"
+        tools:layout="@layout/fragment_get_user_data" />
+    <fragment
+        android:id="@+id/contactFragment2"
+        android:name="com.example.socialize.Fragment.ContactFragment"
+        android:label="Contacts"
+        tools:layout="@layout/fragment_contact" />
+</navigation>
